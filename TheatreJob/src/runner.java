@@ -11,6 +11,7 @@ public class runner
 		static int confirm;
 		static Object[] afraid = {"Mice", "Heights","Loud Noises", "All Of The Above", "None"};
 		static Object[] goodAt = {"Building", "Electricals", "MakeUp", "Hair Styling","Lists", "Being Invisible", "I don't want to learn anything and I'm not good at that stuff"};
+		static Object[] yearsDancing;
 		public static void main(String[] args)
 			{
 				frame= new JFrame("JFrame Name");
@@ -107,6 +108,17 @@ public class runner
 					"Theatre Job",
 					JOptionPane.QUESTION_MESSAGE
 					);
+			confirm = JOptionPane.showConfirmDialog(null, "Do you have any experience at dancing?", "Final",
+					JOptionPane.YES_NO_OPTION);
+			if(confirm == 0)
+				{
+				//	personality();
+				}
+			else
+				{
+					System.out.println("goodbye");
+				}
+			
 		}
 		public static void tech()
 		{
@@ -400,10 +412,7 @@ public class runner
 					 personality();
 				 }
 		}
-		public static void acting()
-		{
-			
-		}
+		
 		public static void confirm()
 		{
 			 confirm = JOptionPane.showConfirmDialog(null, "Are you sure about "+ result + "?", "choose",
