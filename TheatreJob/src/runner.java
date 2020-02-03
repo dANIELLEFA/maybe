@@ -241,14 +241,15 @@ public class runner
 						 }
 					 if(answer.equals(afraid[2]))
 						 {
-							 result =(String) afraid[2];
+							result =(String) afraid[2];
+							
 							 confirm();
 							
 							 if(confirm == 0)
 								 {
 									 quiet();
 								 }
-							 else
+							 else if(confirm == 1)
 								 {
 									 tech();
 
